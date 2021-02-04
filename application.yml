@@ -8,17 +8,7 @@ eureka:
     hostname: localhost    
 
 
-#Type microservice--->microservice:
-#Then I specify the application name(microservice name) --->payment-service:
-#
-#inside payment-service application,there can be multiple endpoint --> endpoints:
-#
-#inside the endpoints,I specify endpoint --->endpoint:
-#then we can add the uri----> uri:
-#so Url of payment-service application is--->http://PAYMENT-SERVICE/payment/dopayment
-#uri:http://PAYMENT-SERVICE/payment/dopayment
-#Now we just need to add this #uri:http://PAYMENT-SERVICE/payment/dopayment
-#to access payment-service application from order-service application(microservice)
+
 
 microservice:
   payment-service:
