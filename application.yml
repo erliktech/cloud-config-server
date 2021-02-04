@@ -1,0 +1,30 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost    
+
+
+#Type microservice--->microservice:
+#Then I specify the application name(microservice name) --->payment-service:
+#
+#inside payment-service application,there can be multiple endpoint --> endpoints:
+#
+#inside the endpoints,I specify endpoint --->endpoint:
+#then we can add the uri----> uri:
+#so Url of payment-service application is--->http://PAYMENT-SERVICE/payment/dopayment
+#uri:http://PAYMENT-SERVICE/payment/dopayment
+#
+
+microservice:
+  payment-service:
+      endpoints:
+          endpoint:
+              uri: http://PAYMENT-SERVICE/payment/dopayment
+  order-service:
+      endpoints:
+          endpoint:
+              uri: http://ORDER-SERVICE/order/bookorder    
